@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This form</title>
+    <link rel="stylesheet" href="CssStyle/mystyle.css">
+
+</head>
+<body> 
+
+    <header>
+		<h2>Форма для вопроса</h2>
+   </header>
+   
+	<main>
+		<form>
+
+			<fieldset>
+
+				<div class="flex-block-colum">
+					<label>Как Вам удобно получить ответ?</label>
+					<label><input type="radio" name='name2'> по почте </label>
+					<label><input type="radio" name='name2'> по телефону </label>
+					<label><input type="radio" name='name2'> не нужно отвечать </label>
+				</div>
+				
+				<div class="flex-block-colum">
+					<label>Укажите тему вопроса</label><br>
+					<select id="sel1">
+						<option>Работа</option>
+						<option>Учеба</option>
+						<option>Хобби</option>
+						<option>Экономика</option>
+						<option>Наука</option>
+					</select>
+				</div>		
+				
+				<div class="flex-block-colum">
+					<label>Остался последний вопрос</label>
+					<label><input type="checkbox" name='name1'> Вам нравится эта форма? </label>
+					<label><input type="checkbox" name='name1'> Вы бы хотели её изменить? </label>
+					<label><input type="checkbox" name='name1'> Стиль не очень, да? </label>
+					<label><input type="checkbox" name='name1'> А может быть структура? </label>
+					<label><input type="checkbox" name='name1'> В принципе все нормально </label>
+					<label><input type="checkbox" name='name1'> Можно лучше? </label>
+				</div>		
+				
+							
+				<div class="flex-block-row">
+					<div class="special-block"><label>Ваше имя:</label></div>
+					<div class="special-block1"><input class="for-input area1" type="text"></div>
+				</div>
+				
+				<div class="flex-block-row">
+					<div class="special-block"><label>Почта:</label></div>
+					<div class="special-block1"><input class="for-input area1" type="text"></div>				
+				</div>
+				
+				<div class="flex-block-row">
+					<div class="special-block"><label>Телефон:</label></div>
+					<div class="special-block1"><input class="for-input area1" type="text"></div>
+				</div>
+				
+				<div class="flex-block-colum">
+					<div><label>Ваше вопрос:</label></div>
+					<div class="inside-margin"><textarea class="for-input"></textarea></div>
+					<div class="center-butt"><button id="special-butt" type="Отправить">Отправить</button></div>
+				</div>
+					
+			</fieldset>
+    	</form>
+    </main>
+
+
+	<footer>	
+		<h3>Веб-технологии, задание 2</h3>
+	</footer>
+</body>
+</html>

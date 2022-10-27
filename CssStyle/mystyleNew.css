@@ -1,0 +1,214 @@
+body
+{
+	background: grey;
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+header
+{
+	background: black;
+	
+
+	display: flex;
+	flex-direction: row;
+}
+
+#logo
+{
+	position: fixed; 
+}
+
+nav
+{
+	color: white;
+
+	width: 100%;
+	padding: 12px;
+}
+
+nav a:hover
+{
+	background: #333;
+	color: aqua;
+	border-radius: 5px;
+}
+
+nav div
+{
+	margin: 0px 20px
+}
+
+.row-center-end
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+}
+
+main
+{
+	margin: 0px;
+}
+
+footer
+{
+	margin: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.black-style
+{
+	color: white;
+	background: black;
+}
+
+.white-style
+{
+	color: black;
+	background: white;
+}
+
+.main-font-white
+{
+	color: white;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	padding: 2rem 2rem 2rem 2rem;
+}
+
+.row-margin
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.row-space-betven
+{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	width: 100%;
+}
+
+.colums
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1
+{
+	margin: 0px;
+}
+
+h3
+{
+	margin: 0px;
+}
+
+h4
+{
+	margin: 0px;
+}
+
+.for-foother
+{
+	display: flex;
+	justify-content: space-between;
+	height: 30vh;
+}
+
+.small-marg
+{
+	margin: 2px;
+}
+
+.black-hei-fon
+{
+	background-color: black;
+	height: 55vh;
+}
+
+.butt
+{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	margin: 10px;
+}
+
+.butt a
+{
+	background: grey;
+	color: black;
+	border-radius: 2px;
+}
+
+.butt a:hover
+{
+	background: #333;
+	color: aqua;
+	border-radius: 5px;
+}
+
+.inside-margin
+{
+	margin: 0 0 50px 0;
+}
+
+.inside-margin-little
+{
+	margin: 0 0 30px 0;
+}
+
+.inside-margin-little1
+{
+	margin: 0 0 16px 0;
+}
+
+.table-border
+{
+	background: rgb(0, 170, 255);
+	border: 3px solid black;
+	border-radius: 6px;
+	margin: 0px;
+	padding: 0px;
+}
+
+td
+{
+	background: white;
+	border: 2px solid black;
+	border-width: 100%;
+	margin: 0px;
+	padding: 2px;
+}
+
+th
+{
+	text-align: center;
+	border: 2px black; 
+	margin: 0px;
+	padding: 0px;
+}
+
+caption
+{
+	font-weight: bolder;
+}
