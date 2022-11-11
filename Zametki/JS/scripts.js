@@ -50,29 +50,57 @@ function CreateObj(str)
     main.appendChild(maindiv);
 }
 
-/*
-<div class="block-message">
-        <div class="block-message-head">
-            <div class="marg"><a>-</a></div>
-            <div class="marg"><a>X</a></div>
-        </div>
+function DeleteObject(el)
+{
+    var main = document.getElementById('mmain');
+    main.removeChild(el);
+}
 
-        <div class="block-message-body">
-            Text
-        </div>
-</div>
-*/
+function Delete(el)
+{
+    DeleteObject(el.parentNode.parentNode);
+}
+
+
+
+function CreateObject(str)
+{
+    var maindiv = document.createElement('div');
+    maindiv.setAttribute('class', 'block-message');
+
+    var headdiv = document.createElement('div');
+    headdiv.setAttribute('class', 'block-message-head');
+
+    var bodydiv = document.createElement('div');
+    bodydiv.setAttribute('class', 'block-message-body');
+    bodydiv.innerHTML = str;
+
+    var a = [document.createElement('a'), document.createElement('a')];
+    
+    a[0].innerHTML = '-';
+    a[1].innerHTML = "X";
+
+    a[0].setAttribute('class', 'marg');
+    a[1].setAttribute('class', 'marg');
+
+    a[0].setAttribute('href', '');
+    a[1].setAttribute('onclick', 'Delete(this)');
+
+    headdiv.appendChild(a[0]);
+    headdiv.appendChild(a[1]);
+
+    maindiv.appendChild(headdiv);
+    maindiv.appendChild(bodydiv);
+
+    var main = document.getElementById("mmain");
+    main.appendChild(maindiv);
+}
 
 function ClickButt()
 {
     var t = document.getElementsByTagName('textarea');
     if(t[0].value != "")
     {
-        CreateObj(t[0].value);
+        CreateObject(t[0].value);
     }
-}
-
-function DeleteObj(el)
-{
-    delete el;
 }
