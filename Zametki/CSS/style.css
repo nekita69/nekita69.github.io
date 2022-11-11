@@ -104,9 +104,10 @@ main
 
     border-radius: 15px;
 
-    min-height: 10vh;
+    min-height: 1vh;
     max-height: auto();
-    height: auto(20vh);
+
+    word-break: break-all;
 }
 
 .redactor
