@@ -83,7 +83,7 @@ function CreateObject(str)
     a[0].setAttribute('class', 'marg');
     a[1].setAttribute('class', 'marg');
 
-    a[0].setAttribute('href', '');
+    //a[0].setAttribute();
     a[1].setAttribute('onclick', 'Delete(this)');
 
     headdiv.appendChild(a[0]);
