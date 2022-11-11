@@ -1,0 +1,211 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background: linear-gradient(#09022e, #ff1154);
+    
+    /*
+    #09022e, #ff1154 - С розовым;
+    #5ee6f0, #9a3deb, #6912d5 - С голубым;
+    */
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    background: black;
+    color: white;
+
+    width: 100vw;
+    height: 7vh;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+    width: auto(100vw);
+    height: auto(100vh);
+}
+
+.main-block
+{
+    display: flex;
+    flex-direction: column;
+
+    background: black;
+    color: white;
+    opacity: 0.75;
+
+    border-radius: 15px;
+
+    min-height: 80vh;
+
+    width: 80vw;
+    height: auto(90vh);
+}
+
+.block-message
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    background: grey;
+    border-radius: 15px;
+    border: 1px solid white;
+
+    margin: 1em 1em 1em 1em;
+
+    width: 30vw;
+    min-height: 15vh;
+    height: auto(15vh);;
+}
+
+.block-message-head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: black;
+    
+    margin: 0px;
+    padding: 0px;
+
+    min-height: 5vh;
+    height: auto(5vh);
+
+    border-radius: 15px 15px 0 0;
+}
+
+.block-message-body
+{
+    background: grey;
+    padding: 0.3em;
+
+    border-radius: 15px;
+
+    min-height: 10vh;
+    max-height: auto();
+    height: auto(20vh);
+}
+
+.redactor
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+    color: white;
+
+    border-radius: 15px;
+
+    width: 80vw;
+
+    margin: 0.4em 0 0 0;
+    padding: 0px;
+}
+
+#text
+{
+    margin: 0.5em 0 0 0;
+    padding: 0px;
+
+    border-radius: 10px;
+
+    width: 60vw;
+    height: 10vh;
+}
+
+#but
+{
+    margin: 0.5em 0 0.7em 0;
+    padding: 0px;
+
+    width: 10vw;
+    height: 5vh;
+}
+
+
+.title-block
+{
+    background: black;
+    color: white;
+    opacity: 0.9;
+
+    border-radius: 15px;
+
+    width: 80vw;
+    height: 8vh;
+
+    margin: 1em 0 1em 0;
+}
+
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 1em 0 0 0;
+    padding: 0px;
+
+    background: black;
+    color: white;
+
+    width: 100vw;
+    height: 7vh;
+}
+
+.spHed
+{
+    font-weight: bold;
+    margin: 1em;
+}
+
+.marg
+{
+    margin: 0.5em;
+}
+
+.spHed:hover
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+
+a
+{
+    cursor: pointer;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
