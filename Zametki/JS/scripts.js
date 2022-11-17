@@ -61,7 +61,15 @@ function Delete(el)
     DeleteObject(el.parentNode.parentNode);
 }
 
-
+function ChangeVisible(el)
+{
+    var c = el.parentNode.parentNode.childNodes;
+    
+    if(c[1].getAttribute('class') == 'block-message-body')
+        c[1].setAttribute('class', 'block-message-body-on');
+    else
+        c[1].setAttribute('class', 'block-message-body');
+}
 
 function CreateObject(str)
 {
@@ -83,7 +91,7 @@ function CreateObject(str)
     a[0].setAttribute('class', 'marg');
     a[1].setAttribute('class', 'marg');
 
-    //a[0].setAttribute();
+    a[0].setAttribute('onclick', 'ChangeVisible(this)');
     a[1].setAttribute('onclick', 'Delete(this)');
 
     headdiv.appendChild(a[0]);
