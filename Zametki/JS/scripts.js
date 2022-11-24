@@ -1,4 +1,3 @@
-var all_div = []
 
 function ChangeColorType(t)
 {
@@ -13,54 +12,28 @@ function ChangeColorType(t)
     {
         s.style.background = "linear-gradient(#5ee6f0, #9a3deb, #6912d5)";
     }
-
 }
 
-function CreateObj(str)
-{
-    var a_a = [document.createElement('a'), document.createElement('a')];
-    var div_2 = [document.createElement('div'),document.createElement('div')];
-    
-    a_a[0].innerHTML = "-";
-    a_a[1].innerHTML = "X";
-
-    var div_1 = document.createElement('div');
-    div_1.setAttribute('class','block-message-head');
-
-    for(var i = 0; i < a_a.length; i++)
-    {
-        div_2[i].setAttribute('class', 'marg');
-        div_2[i].appendChild(a_a[i]);
-
-        div_1.appendChild(div_2[i]);
-    }
-
-    var maindiv = document.createElement('div');
-    maindiv.setAttribute('class', 'block-message');
-
-    var divbody = document.createElement('div');
-    divbody.setAttribute('class', 'block-message-body');
-    divbody.innerText = str;
-    
-    maindiv.appendChild(div_1);
-    maindiv.appendChild(divbody);
-
-
-    var main = document.getElementById('mmain');
-    main.appendChild(maindiv);
-}
-
+//Передаем объект(дочерний элемент) и его отвязываем от нашего главного блока;
 function DeleteObject(el)
 {
     var main = document.getElementById('mmain');
     main.removeChild(el);
 }
 
+//Передаем объект и находим от него родительский элемент;
 function Delete(el)
 {
+    var o = el.parentNode.parentNode.childNodes;
+    for(var i = 0; i < localStorage.length; i++)
+    {
+        if(o[1].innerHTML == localStorage.getItem(localStorage.key(i)))
+            {localStorage.removeItem(localStorage.key(i)); break;}
+    }
     DeleteObject(el.parentNode.parentNode);
 }
 
+//Метод чтобы свернуть блок;
 function ChangeVisible(el)
 {
     var c = el.parentNode.parentNode.childNodes;
@@ -71,6 +44,7 @@ function ChangeVisible(el)
         c[1].setAttribute('class', 'block-message-body');
 }
 
+//Создание блока - передаем текст - создаем и цепляем к главному блоку;
 function CreateObject(str)
 {
     var maindiv = document.createElement('div');
@@ -102,8 +76,46 @@ function CreateObject(str)
 
     var main = document.getElementById("mmain");
     main.appendChild(maindiv);
+
+    var tex = "text" + localStorage.length;
+    localStorage.setItem(tex, str);
 }
 
+function CreateObjectLoad(str)
+{
+    var maindiv = document.createElement('div');
+    maindiv.setAttribute('class', 'block-message');
+
+    var headdiv = document.createElement('div');
+    headdiv.setAttribute('class', 'block-message-head');
+
+    var bodydiv = document.createElement('div');
+    bodydiv.setAttribute('class', 'block-message-body');
+    bodydiv.innerHTML = str;
+
+    var a = [document.createElement('a'), document.createElement('a')];
+    
+    a[0].innerHTML = '-';
+    a[1].innerHTML = "X";
+
+    a[0].setAttribute('class', 'marg');
+    a[1].setAttribute('class', 'marg');
+
+    a[0].setAttribute('onclick', 'ChangeVisible(this)');
+    a[1].setAttribute('onclick', 'Delete(this)');
+
+    headdiv.appendChild(a[0]);
+    headdiv.appendChild(a[1]);
+
+    maindiv.appendChild(headdiv);
+    maindiv.appendChild(bodydiv);
+
+    var main = document.getElementById("mmain");
+    main.appendChild(maindiv);
+
+}
+
+//Для создания объекта - он вызывает метод создания;
 function ClickButt()
 {
     var t = document.getElementsByTagName('textarea');
@@ -112,3 +124,16 @@ function ClickButt()
         CreateObject(t[0].value);
     }
 }
+
+
+//Загрузка страницы;
+
+function load()
+{
+    for(var i = 0; i < localStorage.length; i++)
+    {
+        CreateObjectLoad(localStorage.getItem(localStorage.key(i)));
+    }
+}
+
+window.onload = load();
