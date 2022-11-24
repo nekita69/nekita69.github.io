@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href='CSS/style.css'>
+</head>
+<body id="body">
+    <header>
+        <div class="spHed"><a name="a">About</a></div>
+        <div onclick="ChangeColorType('white')" class="spHed"><a name="a">White-type</a></div>
+        <div onclick="ChangeColorType('black')" class="spHed"><a name="a">Black-type</a></div>
+    </header>
+
+    <main>
+        <div class="title-block">
+            <h1>Photos</h1>
+        </div>
+
+        <div id='mmain' class="main-block">
+            <div class="main-photo">
+                <img src="imgs/art6.jpeg">
+            </div>
+
+            <div class="list-photo">
+                <div class="left-click"></div>
+                <div onclick = "changeText(this)" onmousemove="move(this)" onmouseleave="lev(this)" class="block-photo">2</div>
+                <div onclick = "changeText(this)" onmousemove="move(this)" onmouseleave="lev(this)" class="block-photo">3</div>
+                <div onclick = "changeText(this)" onmousemove="move(this)" onmouseleave="lev(this)" class="block-photo">4</div>
+                <div onclick = "changeText(this)" onmousemove="move(this)" onmouseleave="lev(this)" class="block-photo">5</div>
+                <div onclick = "changeText(this)"onmousemove="move(this)" onmouseleave="lev(this)" class="block-photo">6</div>
+                <div class="right-click"></div>
+            </div>
+
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Иди своей дорогой, сталкер.</p>
+    </footer>
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
