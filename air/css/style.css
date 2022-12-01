@@ -1,0 +1,182 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background: linear-gradient(#09022e, #ff1154);
+    
+    /*
+    #09022e, #ff1154 - С розовым;
+    #5ee6f0, #9a3deb, #6912d5 - С голубым;
+    */
+}
+
+header
+{
+	background: black;
+	color: white;
+	
+	width: 100vw;
+	height: 5vh;
+	
+	margin: 0px;
+    padding: 0px;
+	
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main
+{
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+    align-items: center;
+	
+	
+	width: 100vw;
+	min-height: 85vh;
+	
+	margin: 0px;
+    padding: 0px;
+	
+}
+
+footer
+{
+	background: black;
+	color: white;
+	
+	width: 100vw;
+	height: 10vh;
+	
+	margin: 0px;
+    padding: 0px;
+	
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+    align-items: center;
+}
+
+p
+{
+	margin: 0px;
+    padding: 0px;
+	
+	opacity: 1;
+}
+
+.main-block
+{
+	margin: 2em;
+	padding: 1em;
+	
+	background: black;
+	color: white;
+	
+	width: 85vw;
+	height: 90vh;
+	max-height: 90vh;
+	
+	border-radius: 2em;
+}	
+
+.message-block
+{
+	margin: 0.5em;
+	padding: 1em;
+	
+	background: black;
+	color: white;
+	
+	width: 85vw;
+	height: 10vh;
+	
+	border-radius: 2em;
+}
+
+
+.fon
+{
+	opacity: 0.85;
+}
+
+.mess
+{
+	opacity: 1;
+}
+
+.reg
+{
+	margin: 0 1em 0 0;
+	font-size: bolder;
+	font-weight: bold;
+}
+
+.reg:hover
+{
+	color: #ff1154;
+}
+
+
+form
+{
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+    align-items: center;
+	
+	background:black;
+	color: white;
+	
+	opacity: 0.85;
+	
+	width: 30vw;
+	height: 20vh;
+	
+	border-radius: 2em;
+	
+	padding: 1em;
+	
+	border: gray solid 3px;
+}
+
+.formlaver
+{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 1em;
+}
+
+.word
+{
+	margin: 0 3em 0 0;
+}
+
+a
+{
+	cursor: pointer;
+}
+
+button
+{
+	background: black;
+	color: white;
+	border: gray solid 2px;
+	width: 7vw;
+	height: 5vh;
+	
+	cursor: pointer;
+}
+
+input
+{
+	border: gray solid 2px;
+}
