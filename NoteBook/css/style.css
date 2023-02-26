@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body
+{
+    background-color: #3E1140;
+    color: white;
+    font-family: Roboto;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+header
+{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+
+    min-height: auto(7vh);
+}
+main
+{
+    height: 150vh;
+    margin: 0.5em;
+}
+footer
+{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+
+    height: 20vh;
+}
+
+
+h2
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cont
+{
+    background-color: rgba(0, 0,0,0.75);
+    border-radius: 7px;
+}
+
+.bord
+{
+    border-radius: 2px solid #F542FF;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.marg-right
+{
+    margin: 0 2em 0 0;
+}
+
+.header_menu
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo
+{
+    color: #F542FF;
+    width: 30%;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.menu1
+{
+    opacity: 1;
+}
+
+.buger
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+
+    margin: 0 1em 0 0;
+
+    cursor: pointer;
+}
+
+.buger-top
+{
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+.buger-center
+{
+    border: 1px solid white;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.buger-bottom
+{
+    border: 1px solid white;
+    width: 100%;
+}
+
+.menu-item
+{
+    color: #F542FF;
+    font-size: 18px;
+}
+
+.mycont
+{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 1200px)
+{
+    .mycont
+    {
+        max-width: 970px;
+    }
+    
+}
+@media(max-width: 992px)
+{
+    .mycont
+    {
+        max-width: 750px;
+    }
+    
+}
+@media(max-width: 767px)
+{
+    .mycont
+    {
+        max-width: none;
+    }
+    .menu1
+    {
+        opacity: 0;
+    }
+    .buger
+    {
+        opacity: 1;
+    }
+    
+}
+
+@media(min-width: 767px)
+{
+    .menu1
+    {
+        opacity: 1;
+    }
+    .buger
+    {
+        opacity: 0;
+    }
+}
+
+img
+{
+    max-width: 100%;
+    /*Адаптивная картинка для родителя*/
+}
